@@ -1,3 +1,6 @@
+// try not to create promises object directly.
+// put them in functions and return the promise object.
+
 /* TODO 1: Create a promise with the producer code which gets the email given 
         in the question from the server
     Mock this functionality of getting email from server using a setTimeout()

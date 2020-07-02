@@ -1,3 +1,6 @@
+// try not to create promises object directly.
+// put them in functions and return the promise object.
+
 /* TODO: Convert the given code using promises chain into code utilizing the new syntax of async & await keywords
 NOTES: A. All the identifiers remain constant.
 B. The entire logic remains as it is.

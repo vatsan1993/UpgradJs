@@ -1,3 +1,6 @@
+// try not to create promises object directly.
+// put them in functions and return the promise object.
+
 const getAddress = () => {
   getContinents
     .then(

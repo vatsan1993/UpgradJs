@@ -9,9 +9,6 @@
 // }
 // console.log(sum);
 
-
-
-
 // var orderId = null;
 
 // var placeOrder = (callback) => {
@@ -28,33 +25,29 @@
 
 // placeOrder(printOrderID());
 
-
-
-
-
 // Example 1
-var loadImage1 = new Promise(function (resolve, reject) {
-  console.log("Example 1: Loading image...");
-  setTimeout(function () {
-      var imageUrl = "Desktop/image.png";
-      resolve();
-  }, 2000);
-});
+// var loadImage1 = new Promise(function (resolve, reject) {
+//   console.log("Example 1: Loading image...");
+//   setTimeout(function () {
+//       var imageUrl = "Desktop/image.png";
+//       resolve();
+//   }, 2000);
+// });
 
-loadImage1.then(function () {
-  console.log("Image loaded successfully!");
-}, function (error) {
-  console.log(new Error(error));
-});
+// loadImage1.then(function () {
+//   console.log("Image loaded successfully!");
+// }, function (error) {
+//   console.log(new Error(error));
+// });
 
-// Example 2
-var loadImage2 = new Promise(function (resolve, reject) {
-  console.log("Example 2: Loading image...");
-  setTimeout(function () {
-      var imageUrl = "Desktop/image.png";
-      reject(new Error("Error in loading image!"));
-  }, 2000);
-});
+// // Example 2
+// var loadImage2 = new Promise(function (resolve, reject) {
+//   console.log("Example 2: Loading image...");
+//   setTimeout(function () {
+//       var imageUrl = "Desktop/image.png";
+//       reject(new Error("Error in loading image!"));
+//   }, 2000);
+// });
 
 // output:
 // Example 1: Loading image...

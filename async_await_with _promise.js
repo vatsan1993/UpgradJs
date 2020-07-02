@@ -1,3 +1,10 @@
+// await needs promise objects to be returned if the getemain
+// was a function . Using function for getmail is a better way here
+// because as soon as you run the program a promise object will be
+// automatically created and resolved. Functions on the other hand
+// will not create promises unless that function is called.
+//In Example 2 we have functions that create amd return promises objects.
+
 /* TODO 1: Create a promise with the producer code which 
     gets the email given in the question from the server
     Mock this functionality of getting
