@@ -1,25 +1,34 @@
-/* TODO: Convert the given callback chain into promises and rewrite all the code accordingly
-NOTES: A. All the identifiers should remain constant.
-B. The entire logic should remain as it is.
-C. You just need to convert the callback chain into promise.
+/* TODO: Convert the given code using promises chain into code utilizing the new syntax of async & await keywords
+NOTES: A. All the identifiers remain constant.
+B. The entire logic remains as it is.
 */
 
+/**
+ * Function to get the username from the database
+ * @param {*} callback function to be called after getting the username (validateUsername() function)
+ */
 const getUsername = new Promise((resolve, reject) => {
   console.log('Getting username...');
   // code to get the username
   setTimeout(() => {
     const username = 'srishti';
-
-    resolve('Username = ' + username);
+    console.log('Username = ' + username);
+    resolve(username);
   }, 3000);
 });
 
+/**
+ * Function to validate the username
+ * @param {*} username the username which is to be checked as valid or invalid
+ * @param {*} callback function to be called if the username is valid
+ */
 const validateUsername = (username) => {
   return new Promise((resolve, reject) => {
     console.log('Validating username...');
     // if the username is not undefined or null or empty string, call the getPassword() function
     if (username !== undefined && username !== null && username !== '') {
-      resolve('Valid Username!');
+      console.log('Valid Username!');
+      resolve();
     } else {
       reject('Invalid Username! Please try again!');
     }
@@ -31,13 +40,13 @@ const validateUsername = (username) => {
  * @param {*} callback function to be called after getting the password (validatePassword() function)
  */
 const getPassword = () => {
-  console.log('Getting password...');
-  // code to get the password
   return new Promise((resolve, reject) => {
+    console.log('Getting password...');
+    // code to get the password
     setTimeout(() => {
       const password = 'upgrad';
-
-      resolve('Password = ' + password);
+      console.log('Password = ' + password);
+      resolve(password);
     }, 3000);
   });
 };
@@ -52,9 +61,10 @@ const validatePassword = (password) => {
     console.log('Validating password...');
     // if the password is not undefined or null or empty string, call the done() function
     if (password !== undefined || password !== null || password !== '') {
-      resolve('Valid Password!');
+      console.log('Valid Password!');
+      resolve();
     } else {
-      resolve('Invalid Password! Please try again!');
+      reject('Invalid Password! Please try again!');
     }
   });
 };
@@ -74,7 +84,6 @@ const login = () => {
   getUsername
     .then(
       (username) => {
-        console.log(username);
         return validateUsername(username);
       },
       (err) => {
@@ -83,7 +92,6 @@ const login = () => {
     )
     .then(
       (validation) => {
-        console.log(validation);
         return getPassword();
       },
       (err) => {
@@ -92,7 +100,6 @@ const login = () => {
     )
     .then(
       (password) => {
-        console.log(password);
         return validatePassword(password);
       },
       (err) => {
@@ -101,7 +108,6 @@ const login = () => {
     )
     .then(
       (validation) => {
-        console.log(validation);
         done();
       },
       (err) => {
