@@ -1,0 +1,47 @@
+[33mcommit 934a3298b57bcb4727ef3e5537bb8e394119c935[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Srivatsan <vatsan1993@gmail.com>
+Date:   Mon Jul 20 21:22:58 2020 +0530
+
+    code cleanup before development. deleted the html code in app.js, deleted app.css, logo.svg
+
+[33mcommit 45f8c2dbafcfddb27bc55f857ffcae3f37dd067c[m
+Author: Srivatsan <vatsan1993@gmail.com>
+Date:   Mon Jul 20 20:35:15 2020 +0530
+
+    created phone-directory project-- initial commit
+
+[33mcommit 88634accbba23c5ae9b043b0b15bea29fd03d7db[m
+Author: Srivatsan <vatsan1993@gmail.com>
+Date:   Wed Jul 15 12:13:41 2020 +0530
+
+    worked with chalk package
+
+[33mcommit 26dc9883c20e67c3c7a9b07fd631ab06f89b9e76[m
+Author: Srivatsan <vatsan1993@gmail.com>
+Date:   Wed Jul 15 11:21:42 2020 +0530
+
+    first node app with nodemon package
+
+[33mcommit a3e85ff92ebd3f259ef3722559c6d8d9d5bc6332[m
+Author: Srivatsan <sozhavaramsrivatsan@hotmail.com>
+Date:   Thu Jul 2 14:38:12 2020 +0530
+
+    added example for async await with out promise object
+
+[33mcommit 61d73970f60a27eb455cefb8320bf841177b0e5e[m
+Author: Srivatsan <sozhavaramsrivatsan@hotmail.com>
+Date:   Thu Jul 2 14:08:40 2020 +0530
+
+    added async and await using promises code
+
+[33mcommit e8fe08a441da586fe5de247959d9e9558ade2d54[m
+Author: Srivatsan <sozhavaramsrivatsan@hotmail.com>
+Date:   Thu Jul 2 00:25:48 2020 +0530
+
+    compleated promises
+
+[33mcommit e5818ed90d97b5d22b86132ef25fa30ed2a42031[m
+Author: Srivatsan <sozhavaramsrivatsan@hotmail.com>
+Date:   Wed Jul 1 22:57:37 2020 +0530
+
+    first commit
