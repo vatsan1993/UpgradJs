@@ -3,6 +3,11 @@ import Header from './Header';
 import './App.css';
 
 import { Fragment } from 'react';
+
+const subscribers = [
+  { id: 1, name: 'Srivatsan', phone: '9110301748' },
+  { id: 2, name: 'Sridharan', phone: '8886010444' },
+];
 function App() {
   return (
     <div>
@@ -13,6 +18,14 @@ function App() {
           <span className='grid-item name-heading'>Name</span>
           <span className='grid-item phone-heading'>Phone</span>
         </div>
+        {subscribers.map((sub) => {
+          return (
+            <div key={sub.id} className='grid-container'>
+              <span className='grid-item '>{sub.name}</span>
+              <span className='grid-item '>{sub.phone}</span>
+            </div>
+          );
+        }, subscribers)}
       </div>
     </div>
   );
