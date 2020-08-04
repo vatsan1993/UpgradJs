@@ -11,7 +11,8 @@ const subscribers = [
 function App() {
   return (
     <div>
-      <Header />
+      {/* Addeda prop */}
+      <Header heading='Phone Directory' />
       <div className='component-body-container'>
         <button className='custom-btn add-btn'>Add</button>
         <div className='grid-container heading-container'>
@@ -28,7 +29,7 @@ function App() {
               </span>
             </div>
           );
-        }, subscribers)}
+        })}
       </div>
     </div>
   );
