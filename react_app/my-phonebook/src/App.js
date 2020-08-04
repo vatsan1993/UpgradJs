@@ -4,6 +4,10 @@ import './App.css';
 
 import { Fragment } from 'react';
 
+let deleteHandler = (msg) => {
+  alert(msg);
+};
+
 const subscribers = [
   { id: 1, name: 'Srivatsan', phone: '9110301748' },
   { id: 2, name: 'Sridharan', phone: '8886010444' },
@@ -25,7 +29,12 @@ function App() {
               <span className='grid-item '>{sub.name}</span>
               <span className='grid-item '>{sub.phone}</span>
               <span className='grid-item action-btn-container'>
-                <button className='custom-btn delete-btn'>DELETE</button>
+                <button
+                  className='custom-btn delete-btn'
+                  onClick={deleteHandler.bind(this, 'Delete Clicked')}
+                >
+                  DELETE
+                </button>
               </span>
             </div>
           );
