@@ -8,9 +8,23 @@ class App extends Component {
     this.state = {
       subscribersListToShow: [],
     };
+    console.log('consructor called');
+  }
+  componentDidMount() {
+    console.log('Component did mount called');
+
+    let newSubscriber = {
+      id: 1,
+      name: 'Srivatsan',
+      phone: '9110301748',
+    };
+    let suscriberList = this.state.subscribersListToShow;
+    suscriberList.push(newSubscriber);
+    this.setState({ subscribersListToShow: suscriberList });
   }
 
   render() {
+    console.log('render called');
     return (
       <div>
         <Header heading='Phone Directory' />
