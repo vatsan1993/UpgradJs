@@ -3,26 +3,6 @@ import Header from './Header.js';
 import './ShowSubscribers.css';
 
 class ShowSubscribers extends Component {
-  constructor() {
-    super();
-    this.state = {
-      subscribersListToShow: [],
-    };
-    console.log('consructor called');
-  }
-  componentDidMount() {
-    console.log('Component did mount called');
-
-    let newSubscriber = {
-      id: 1,
-      name: 'Srivatsan',
-      phone: '9110301748',
-    };
-    let suscriberList = this.state.subscribersListToShow;
-    suscriberList.push(newSubscriber);
-    this.setState({ subscribersListToShow: suscriberList });
-  }
-
   render() {
     console.log('render called');
     return (
@@ -36,7 +16,7 @@ class ShowSubscribers extends Component {
             <span className='grid-item phone-heading'>Phone</span>
           </div>
 
-          {this.state.subscribersListToShow.map((sub) => {
+          {this.props.subscribersList.map((sub) => {
             return (
               <div key={sub.id} className='grid-container'>
                 <span className='grid-item'>{sub.name}</span>
